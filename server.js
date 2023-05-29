@@ -19,9 +19,9 @@ app.post('/completions', async (req, res) => {
 			model: 'gpt-3.5-turbo',
 			max_tokens: 100,
 			temperature: 0,
-			messages: [
-				{role: 'user', content: req.body.message }
-			]
+			messages: req.body?.messages ?? {
+				role: 'user', content: req.body.message
+			},
 		})
     }
     try {
