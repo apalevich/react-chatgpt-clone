@@ -17,6 +17,7 @@ function App() {
 
   const getMessages = async () => {
     if (!previousChats.length) return false;
+    if (previousChats[previousChats.length-1].role === 'assistant') return false;
 
     if (!currentTitle && value) {
       setCurrentTitle(value);
@@ -45,11 +46,9 @@ function App() {
     }
   }
 
+  // const uniqueTitles = Array.from(new Set())
+
   useEffect(() => {
-    let list = document.querySelectorAll('ul.feed');
-    previousChats.forEach(li => {
-      
-    })
     getMessages();
   }, [previousChats]);
 
@@ -57,7 +56,9 @@ function App() {
     <div className="app">
       <section className="side-bar">
         <button>+ New chat</button>
-        <ul className="history"></ul>
+        <ul className="history">
+          BLAH
+        </ul>
         <nav>
           <p onClick={() => {console.log('previousChats', previousChats)}}>Made by Artyom</p>
         </nav>
@@ -65,7 +66,7 @@ function App() {
       <section className="main">
         <h1>{ currentTitle || 'ArtyomGPT' }</h1>  
         <ul className="feed">
-          { previousChats.map(element => `<li>${element.content}</li>`) }
+          { previousChats?.map((chat, idx) => <li key={idx} className={chat.role}>{chat.content}</li>) }
         </ul>
         <div className="bottom-section">
           <div className="input-container">
