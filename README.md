@@ -1,18 +1,35 @@
-# Getting Started with Create React App
+# Getting Started with React ChatGPT Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Before you start, you have to create your own OpenAI API key (free plan is available):
+
+1. Download or clone the React ChatGPT Clone repo.
+
+2. Visit [the OpenAI platform](https://platform.openai.com), create an account and log into it.
+
+3. Go to the [API keys section](https://platform.openai.com/account/api-keys) and clock "Create new secret key". Don't forget to copy it as it displays (it happens only once)
+
+3. Open your plain text editor (Notepad, Sublime Text, etc.) and put here: ```API_KEY = ``` then paste OpenAI key
+
+4. Save the file in the React ChatGPT Clone folder
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start:frontend`
 
-Runs the app in the development mode.\
+Runs the app's frontend in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+### `npm run start:backend`
+
+Runs the app's server in the development mode.\
+Open [http://localhost:8000](http://localhost:8000) to view it in your browser.
+
+The page will reload when you make changes.\
 
 ### `npm test`
 
@@ -38,33 +55,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
